@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="formulario.css">
+<head>
+	<title>Formulário</title>
+<script type="text/javascript" src="formulario.js">
+	</script>
+</head>
+<body style="background-color: #547877">
+	<div class="container">
+	<h1>Contatos</h1>
+	<form method="post" action="#" onsubmit="return validar()">
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" id="nome"/>
+		<br>
+		<br>
+
+		<label>Sexo:</label>
+		<label for="sexoM">Masculino</label>
+		<input type="radio" name="sexo" id="sexoM" value="M" onclick="exibirQuadroGravidez()">
+		<label for="sexoF">Feminino</label> 
+		<input type="radio" name="sexo" id="sexoF" value="F" onclick="exibirQuadroGravidez()">
+		<br/>
+		<br/>
+
+		<div id="gravidez" style="display:none">
+			<label for="gravida"> Já esteve gravida?</label>
+			<input type="checkbox" name="gravida" id="gravida" value="S"/>
+			<br>
+			<br>
+		</div>
+
+		<label for="cidade">Cidade:</label>
+		<select name="cidade" id="cidade">
+			<option>Selecione</option>
+			<option value="Fortaleza">Fortaleza</option>
+			<option value="Joao Pessoa">João Pessoa</option>
+			<option value="Natal">Natal</option>		
+		</select>
+		<br>
+		<br>
+
+		<label for="cpf">CPF:</label>
+		<input type="number" name="cpf" id="cpf">
+		<br>
+		<br>
+
+		<label for="ativo">Ativo</label>
+		<input type="checkbox" name="ativo" id="ativo" value="S">
+		<br>
+		<br>
+
+		<label for="descricao">Descrição Pessoal</label>
+		<br>
+		<textarea name="descricao" id="descricao"></textarea>
+		<br>
+		<br>
+
+		<label for="arquivo">Arquivo</label>
+		<br>
+		<input type="file" name="arquivo" id="arquivo"/>
+		<br>
+		<br>
+
+		<input type="submit" value="Salvar">
+		<input type="button" value="Limpar" onclick="limpar()">
+		
+		<div id="mensagem" style="background-color: #000">
+			
+		</div>
+		</div>
+
+	</form>
+	
+	<script>
+		
+	</script>
+
+</body>
+</html>
